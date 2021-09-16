@@ -1,0 +1,66 @@
+h1 {
+  font-family: "Roboto Mono", monospace;
+}
+p {
+  color: #393e46;
+  font-size: 20px;
+  font-weight: 300;
+}
+a {
+  text-align: right;
+  font-size: 15px;
+}
+.weather {
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 600px;
+  height: 470px;
+  margin: 50px;
+}
+.form {
+  padding: 20px 0 0 25px;
+  align-items: left;
+}
+.current {
+  padding: 9px 11px 3px 11px;
+  margin: 30px 0px 0px -48px;
+}
+.weatherday {
+  padding: 20px 0 0 17px;
+  margin: 4px -16px -9px -36px;
+  align-items: right;
+}
+.day {
+  padding: 10px 0 0 26px;
+}
+.conditions {
+  font-weight: 300;
+  padding: 0;
+}
+.forecast {
+  padding: 0 25px 12px 100px;
+  text-align: center;
+}
+.emoji {
+  font-size: 90px;
+  text-align: center;
+}
+.card-body {
+  text-align: center;
+}
+.card {
+  margin: 0 0 0 30px;
+}
+.col-2 {
+  margin: -10px 6px 0 0;
+}
+.temperature {
+  font-size: 50px;
+  text-align: left;
+  padding-left: 15px;
+}
+.linktemp {
+  position: relative;
+  top: -80px;
+  left: 35px;
+}
