@@ -52,7 +52,9 @@ formcity.addEventListener("submit", search);
 
 function showfahrenheittemp(event) {
   event.preventDefault();
-  let fahrenheitTemperature = (14 * 9) / 5 + 32;
+  let fahrenheitTemperature = (celsiustemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit");
@@ -60,21 +62,22 @@ fahrenheitLink.addEventListener("click", showfahrenheittemp);
 
 //TEMPcelcius____________________________________________________
 
-function showcel(event) {
+function showcelsiustemp(event) {
   event.preventDefault();
-  let h1 = document.querySelector("#temp");
-  h1.innerHTML = "21";
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiustemperature);
 }
-let elementcel = document.querySelector("#celsius");
-elementcel.addEventListener("click", showcel);
 
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", showcelsiustemp);
+let celsiustemperature = null;
 //TRUE TEMP_________________________________________
 
 function displayWeatherCondition(response) {
   document.querySelector("#Citytemp").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("#temperature").innerHTML =
+    Math.round(celsiustemperature);
+  celsiustemperature = response.data.main.temp;
   //document.querySelector("#Precipitation").innerHTML =response.data.main.precipitation;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(

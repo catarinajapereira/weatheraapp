@@ -55,13 +55,20 @@ a {
 .col-2 {
   margin: -10px 6px 0 0;
 }
-.temperature {
+.temperatures {
   font-size: 50px;
   text-align: left;
   padding-left: 15px;
 }
 .linktemp {
   position: relative;
-  top: -80px;
-  left: 35px;
+  top: -5px;
+  left: 19px;
+}
+.active {
+  color: black;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
 }
