@@ -1,5 +1,5 @@
 body {
-  background-color: #a7c3e5;
+  background-color: #6d9886;
   font-family: arial, sans-serif;
 }
 
@@ -25,12 +25,12 @@ footer {
   opacity: 0.5;
 }
 .weather {
-  border: 1px solid whitesmoke;
+  border: 1px solid #d9cab3;
   border-radius: 16px;
   width: 678px;
   height: 490px;
   margin: 60px auto;
-  background-color: whitesmoke;
+  background-color: #d9cab3;
   box-shadow: 0 0 32px;
 }
 .cityname {
@@ -49,10 +49,12 @@ footer {
   height: 26px;
   padding: 2px 6px 3px 8px;
   margin: -63px -3px -10px 336px;
+  background-color: #6d9886;
 }
 .current {
   padding: 0px 14px 0px 21px;
   margin: 29px 0px 0px -19px;
+  background-color: #6d9886;
 }
 .weatherday {
   padding: 0px 0 0 0px;
