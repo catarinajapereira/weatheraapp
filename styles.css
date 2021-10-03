@@ -1,9 +1,8 @@
 body {
   background-color: #a7c3e5;
+  font-family: arial, sans-serif;
 }
-h1 {
-  font-family: "Roboto Mono", monospace;
-}
+
 p {
   color: #393e46;
   font-size: 20px;
@@ -105,4 +104,7 @@ a {
 }
 .active:hover {
   text-decoration: none;
+}
+.weather-forecast-date {
+  color: black;
 }

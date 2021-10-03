@@ -129,7 +129,7 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row"style="
-    padding: 0px 56px 15px 112px;
+    padding: 0px 56px 15px 112px;width: 896px;
 ">`;
 
   forecast.forEach(function (forecastDay, index) {
@@ -140,7 +140,9 @@ function displayForecast(response) {
       <div class="col-2">
         <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
         <img
-          src="http://openweathermap.org/img/wn/50d@2x.png"
+          src="http://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png"
           alt=""
           width="42"
         />
