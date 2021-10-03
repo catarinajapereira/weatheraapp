@@ -24,10 +24,15 @@
     <div class="container">
       <div class="weather">
         <div class="row">
-          <div class="col-7">
+          <div class="col-8">
             <div class="form">
               <form id="searchBar">
-                <input type="text" placeholder="City" id="city" />
+                <input
+                  type="text"
+                  placeholder="City"
+                  id="city"
+                  class="form-control"
+                />
                 <input type="submit" value="Search" class="btn btn-primary" />
               </form>
             </div>
@@ -37,94 +42,47 @@
               Current
             </button>
           </div>
-
-          <div class="col-2">
-            <div class="weatherday">
-              <h1 id="description">Sunny</h1>
-            </div>
-          </div>
         </div>
         <div class="row">
-          <div class="col-4">
-            <div class="day">
-              <h1 id="Citytemp">Lisbon</h1>
-              <p id="date"></p>
-
-              <div class="row">
-                <div class="col-4">
-                  <div class="conditions">
-                    <p>
-                      Humidity:<span id="humidity">37%</span> <br />
-                      wind:<span id="wind">6km/h</span>Km/h<br />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="day">
+            <h1 id="Citytemp" class="cityname">Lisbon</h1>
           </div>
-          <div class="col-6">
+        </div>
+
+        <div class="row">
+          <div class="col-7">
             <div class="forecast">
-              <div class="row">
-                <div class="col">
-                  <div class="emoji">
-                    <img src="" id="icon" />
-                  </div>
-                </div>
-              </div>
-              <span id="temperature" class="temperatures"> 20º</span
-              ><span class="linktemp">
-                <a href="#" id="celsius" class="active">C | </a>
-                <a href="#" id="fahrenheit" class="active"> F</a>
+              <span class="col">
+                <span id="temperature" class="temperatures"> 20º</span>
+                <span class="linktemp">
+                  <a href="#" id="celsius" class="active">C | </a>
+                  <a href="#" id="fahrenheit" class="active"> F</a>
+                </span>
+                <span class="emoji"> <img src="" id="icon" /> </span>
               </span>
             </div>
           </div>
-        </div>
-        <div class="week">
-          <div class="row">
-            <div class="col-2">
-              <div class="card" style="width: 100px">
-                <div class="card-body">
-                  <h5 class="card-title">☀️</h5>
-                  <p class="card-text">21º <br />Lisboa</p>
-                </div>
-              </div>
+          <div class="col-2">
+            <div class="weatherday">
+              <h1 id="description">Clear</h1>
+
+              <p id="date" class="weatherdescript"></p>
             </div>
-            <div class="col-2">
-              <div class="card" style="width: 100px">
-                <div class="card-body">
-                  <h5 class="card-title">☀️</h5>
-                  <p class="card-text">21º <br />Lisboa</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="card" style="width: 100px">
-                <div class="card-body">
-                  <h5 class="card-title">☀️</h5>
-                  <p class="card-text">21º <br />Lisboa</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="card" style="width: 100px">
-                <div class="card-body">
-                  <h5 class="card-title">☀️</h5>
-                  <p class="card-text">21º <br />Lisboa</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="card" style="width: 100px">
-                <div class="card-body">
-                  <h5 class="card-title">☀️</h5>
-                  <p class="card-text">21º <br />Lisboa</p>
-                </div>
-              </div>
+          </div>
+          <div class="col-2">
+            <div class="conditions">
+              <p>
+                Humidity:<span id="humidity">37%</span> <br />
+                wind:<span id="wind">6km/h</span>Km/h<br />
+              </p>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="week" id="forecast"></div>
     </div>
+
     <script src="index.js"></script>
   </body>
 </html>

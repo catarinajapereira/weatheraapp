@@ -1,3 +1,6 @@
+body {
+  background-color: #a7c3e5;
+}
 h1 {
   font-family: "Roboto Mono", monospace;
 }
@@ -10,47 +13,78 @@ a {
   text-align: right;
   font-size: 15px;
 }
+.week {
+  margin-top: -250px;
+  margin-left: 44px;
+  text-align: center;
+  color: #393e46;
+  font-size: 22px;
+  opacity: 0.5;
+}
 .weather {
-  border: 1px solid black;
-  border-radius: 4px;
-  width: 600px;
-  height: 470px;
-  margin: 50px;
+  border: 1px solid whitesmoke;
+  border-radius: 16px;
+  width: 678px;
+  height: 490px;
+  margin: 60px auto;
+  background-color: whitesmoke;
+  box-shadow: 0 0 32px;
+}
+.cityname {
+  font-size: 40px;
 }
 .form {
-  padding: 20px 0 0 25px;
+  padding: 17px 0 0 24px;
   align-items: left;
 }
+.form-control {
+  width: 320px;
+  height: 28px;
+}
+.btn.btn-primary {
+  width: 81px;
+  height: 26px;
+  padding: 2px 6px 3px 8px;
+  margin: -63px -3px -10px 336px;
+}
 .current {
-  padding: 9px 11px 3px 11px;
-  margin: 30px 0px 0px -48px;
+  padding: 0px 14px 0px 21px;
+  margin: 29px 0px 0px -19px;
 }
 .weatherday {
-  padding: 20px 0 0 17px;
-  margin: 4px -16px -9px -36px;
+  padding: 0px 0 0 0px;
+  margin: 20px 0 0 -66px;
   align-items: right;
 }
 .day {
-  padding: 10px 0 0 26px;
+  padding: 11px 0 0 36px;
 }
 .conditions {
   font-weight: 300;
-  padding: 0;
+  padding: 29px 0px 0px 0px;
+  margin-left: -15px;
 }
 .forecast {
-  padding: 0 25px 12px 100px;
+  padding: 0 90px 0px 40px;
   text-align: center;
+  margin-top: -25px;
 }
 .emoji {
   font-size: 90px;
   text-align: center;
+  padding: 0px 0px 0px 30px;
+}
+.weatherdescript {
+  font-size: 15px;
 }
 .card-body {
   text-align: center;
 }
 
 .card {
-  margin: 0 0 0 30px;
+  margin: 18px 0 0 30px;
+  background-color: whitesmoke;
+  border-color: whitesmoke;
 }
 .col-2 {
   margin: -10px 6px 0 0;
@@ -58,7 +92,7 @@ a {
 .temperatures {
   font-size: 50px;
   text-align: left;
-  padding-left: 15px;
+  padding-left: 0px;
 }
 .linktemp {
   position: relative;
