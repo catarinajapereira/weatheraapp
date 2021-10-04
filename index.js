@@ -52,8 +52,8 @@ formcity.addEventListener("submit", search);
 
 function showfahrenheittemp(event) {
   event.preventDefault();
-  let fahrenheitTemperature = (celsiustemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celsiustemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
@@ -75,8 +75,7 @@ let celsiustemperature = null;
 
 function displayWeatherCondition(response) {
   document.querySelector("#Citytemp").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML =
-    Math.round(celsiustemperature);
+
   celsiustemperature = response.data.main.temp;
   //document.querySelector("#Precipitation").innerHTML =response.data.main.precipitation;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -116,8 +115,6 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-/*let form = document.querySelector("#searchbar");
-form.addEventListener("submit", searchcity);*/
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
