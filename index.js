@@ -47,30 +47,6 @@ function search(event) {
 
 let formcity = document.querySelector("#searchBar");
 formcity.addEventListener("submit", search);
-
-//TEMPfahrenheit____________________________________________________
-
-function showfahrenheittemp(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  let fahrenheitTemperature = (celsiustemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", showfahrenheittemp);
-
-//TEMPcelcius____________________________________________________
-
-function showcelsiustemp(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiustemperature);
-}
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", showcelsiustemp);
-let celsiustemperature = null;
 //TRUE TEMP_________________________________________
 
 function displayWeatherCondition(response) {
@@ -100,6 +76,29 @@ function searchcity(city) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
+//TEMPfahrenheit____________________________________________________
+
+function showfahrenheittemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celsiustemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", showfahrenheittemp);
+
+//TEMPcelcius____________________________________________________
+
+function showcelsiustemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiustemperature);
+}
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", showcelsiustemp);
+let celsiustemperature = null;
 //current location___________________________________
 function searchLocation(position) {
   let apikey = "9413ff4c9edfa5384e909cc03e3a00a7";
